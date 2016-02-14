@@ -1,0 +1,249 @@
+\chapter{Semiclassical Theory of Interaction between Two-level Atom and Classical Light}
+
+\section{Electrodynamics of a polarizable medium: Local-fleld correction and Clausius-Mossotti equation}
+
+In a dense liquid or gaseous medium, the field on an individual atom will be influenced by the polarization of the atoms in its close neighborhood. %In other words, if the medium is uniformly polarized, an atom will feel a local field that differs from the field in the medium.
+
+Conventionally, a mean-field theory (MFT) is used to study the local field. An arbitrary atom in such a medium is surrounded by the other atoms~\cite{feynman}. The field on the site of this atom $\cbE_{loc}$ can be approximated by the field in a small spherical hole that centered at the position of the atom. Imagine that this spherical hole is made by "scooping out" a sphere of the polarized material, assume $\cbE$ is the average field in the medium and $\cbE_{sphere}$ is the field inside the scooped out sphere, because of the superposition, we have
+\bea
+\cbE=\cbE_{loc}+\cbE_{sphere}.
+\label{E_MEAN}
+\eea
+
+Note that the sphere is also uniformly polarized, therefore the field inside the sphere is uniform, the value is given by
+\bea
+\cbE_{sphere}=-\frac{\mathbf{\cal{P}}}{3\epsilon_0},
+\label{E_SPHERE}
+\eea
+where  $\mathcal{P}$ is the polarization.
+
+Combining Eq.~\eq{E_MEAN} and Eq.~\eq{E_SPHERE}, we obtain the expression of the local field at the position of an atom in a uniformly polarized medium as
+\bea
+\cbE_{loc}=\cbE+\frac{\mathbf{\cal{P}}}{3\epsilon_0},
+\label{LOCAL_FIELD}
+\eea
+The correction term $\frac{\mathbf{\cal{P}}}{3\epsilon_0}$  is referred to as the local-field correction. We will encounter with this correction repeatedly in later chapters where we will discuss the interpretation of this correction by means other than the conventional mean-field theory.
+
+For now, we can take one more step forward. Assume $\alpha$ is the polarizability of each individual atom and there are $N$ identical atoms in the medium, since the real field felt by each atom is $\cbE_{loc}$ given by Eq.~\eq{LOCAL_FIELD}, we have
+\bea
+\mathbf{\cal{P}}=4\pi\epsilon_0N\alpha\cbE_{loc}=4\pi\epsilon_0N\alpha\left(\cbE+\frac{\mathbf{\cal{P}}}{3\epsilon_0}\right).
+\label{POLARIZATION}
+\eea
+Remembering that the susceptibility $\chi$ is just $\mathbf{\cal{P}}/\epsilon_0\cbE$, from Eq.~\eq{POLARIZATION} we can readily derive the Clausius-Mossotti equation (Lorentz-Lorenz law) as:
+\bea
+\chi=\frac{4\pi N\alpha}{1-\frac{4}{3}\pi N\alpha}.
+\label{LLLAW}
+\eea
+This equation is a bridge between the bulk property of a sample ($\chi$) and the response of individual atoms to the external light field ($\alpha$). The exact form of $\alpha$ is determined by the internal structure of the atom and the nature of the light. We will see specific examples in later chapters too.
+
+
+\section{Interaction of a two-level atom with a classical field}
+
+Now let us get back to the problem of the response of a quantum two-level atom to a classical electric field, which is one of the simplest nontrivial models involving the atom-field interaction\cite{quantum_optics}. As a semiclassical model, it allows us to extract essential features of atom-field interactions and provides rather satisfactory explanations to many optical phenomena. As a matter of fact, most of our research is primarily based on this model. Therefore, it is worthwhile to recap some core concepts here.
+
+\subsection{Einstein $A$ and $B$ coefficients}
+Einstein used $A$ and $B$ coefficients to formulate a purely phenomenological theory of  absorption and emission of light by an atom~\cite{quantum_optics,1982AmJPh..50..982H}.
+
+We assume $N$ identical two-level atoms with a lower bound-state energy level $E_1$ and a higher level $E_2$. The photon emitted or absorbed by the atom has an energy equal to the difference between two levels, i.e., $\hbar\omega_0=E_2-E_1$.
+
+Three processes exist simultaneously in the atom-field interaction: spontaneous emission, stimulated emission and absorption. Accordingly, there are three phenomenological constants $A_{21}$, $B_{21}$ and $B_{12}$.
+
+We also assume the average energy density of the electromagnetic field is $U(\omega)$, the populations of the lower and upper levels are $N_1$ and $N_2$, thus $N_1+N_2=N$, then we can write a rate equation as
+\bea
+\frac{dN_1}{dt}=-\frac{dN_2}{dt}=A_{21}N_2+B_{21}U(\omega)N_2-B_{12}U(\omega)N_1.
+\label{AB_RATE}
+\eea
+Apparently, $A_{21}$, $B_{21}U(\omega)$ and $B_{12}U(\omega)$ represent the probabilities per unit time for the atom to undergo spontaneous decay, stimulated emission and absorption, respectively. Starting from Eq.~\eq{AB_RATE}, given a certain energy distribution of the field, Eq.~\eq{AB_RATE} is solvable in some cases.
+
+For example, if we have an external light beam incident on atoms, which has a constant energy density such that $U(\omega)\equiv U$, both the lower and upper level are non-degenerate so $B_{21}=B_{12}=B$. We also write $A_{21}=A$, the solution for Eq.~\eq{AB_RATE} is:
+\bea
+N_1(t)=\left(N^0_1-\frac{N(A+BU)}{A+2BU}\right)\exp\left[-\left(A+2BU\right)t\right]+\frac{N(A+BU)}{A+2BU},
+\eea
+where $N^0_1$ is the initial population of the lower level.
+
+In the case that $N^0_1$, as $t\to\infty$, we will finally reach the steady state for which we have
+\bea
+\frac{N_2}{N}=\frac{1}{2+A/BU}.
+\eea
+
+Particularly, if we switch off the external field, i.e., $U=0$, Eq.~\eq{AB_RATE} becomes
+\bea
+\frac{dN_2}{dt}=-N_2A,
+\eea
+then $N_2(t)=N^0_2\exp(-At)$. This exponential decay of the upper level population with time corresponds to the familiar spontaneous emission. Of course, the ab initio calculation of the $A$ (and $B$ as well) coefficient is not feasible under this framework. A thorough analysis based on quantum field is needed, which will not be covered in this section.
+
+\subsection{Damped two-level system}
+Now let us assume that the two-level atom is driven by a classical monochromatic light field
+\bea
+\bE(\br,t)=\frac{1}{2}\cbE(\br)e^{-i\omega t}+\frac{1}{2}\cbE^*(\br)e^{i\omega t},
+\eea
+and the two energy eigenstates of the atom is labeled by $\ket{0}$ and $\ket{1}$. The energy difference between the two levels is still $\hbar\omega_0$. Then the atomic Hamiltonian can be written as
+\bea
+\frac{H_0}{\hbar}=\omega_0\ket{1}\bra{1}.
+\eea
+In the dipole approximation, the atom-field interaction is
+\bea
+\frac{H^\prime}{\hbar}=-\hat{\bf{d}}\cdot\bE(t)=-\bE(t)\cdot\left(\bf{d}^*\ket{0}\bra{1}+\bf{d}\ket{1}\bra{0}\right),
+\eea
+where $\hat{\bf{d}}$ is the atomic dipole operator and $\bf{d}=\bra{1}\hat{\bf{d}}\ket{0}$. Thus we have the Hamiltonian
+\bea
+\frac{H}{\hbar}=\frac{H_0}{\hbar}+\frac{H^\prime}{\hbar}=\omega_0\ket{1}\bra{1}-\frac{\bE(t)}{\hbar}\cdot\left(\bf{d}^*\ket{0}\bra{1}+\bf{d}\ket{1}\bra{0}\right).
+\eea
+
+Next we transform to a rotating frame with a unitary operator
+\bea
+U=\ket{0}\bra{0}+e^{i\omega t}\ket{1}\bra{1}.
+\eea
+In order to keep the time dependent Schrodinger equation valid, the transformed Hamiltonian should be defined as
+\bea
+\tilde{H}&=&i\hbar\frac{dU}{dt}U^{\dagger}+UHU^{\dagger}\nonumber\\
+&=&(\omega_0-\omega)\ket{1}\bra{1}\nonumber\\
+&&-\frac{1}{2}(\cbE e^{-i\omega t}+\cbE^*e^{i\omega t})\cdot(e^{-i\omega t}\bf{d}^*\ket{0}\bra{1}+e^{i\omega t}\bf{d}\ket{1}\bra{0}).
+\eea
+In the rotating-wave approximation (RWA), we drop the terms that contain $e^{\pm 2i\omega t}$, define the detuning $\Delta=\omega_0-\omega$ and the Rabi frequency $\Omega=\frac{\bf{d}\cdot\cbE}{\hbar}$, the tranformed Hamiltonian becomes
+\bea
+\frac{H}{\hbar}=\Delta\ket{1}\bra{1}-\frac{1}{2}(\Omega\ket{1}\bra{0}+\Omega^*\ket{0}\bra{1}).
+\label{TRANS_H}
+\eea
+
+The Liouvill-von Neumann equation gives the equation of motion of the density matrix as
+\bea
+\frac{d\rho(t)}{dt}=-i\left[\frac{H}{\hbar},\rho\right].
+\eea
+In principle, given the Hamiltonian in ~\eq{TRANS_H}, we can solve the equations of motion. However, just as in the Einstein's theory of $A$ and $B$ coefficients, spontaneous emission should be taken into consideration although our model is semi classical. In other words, some relaxation terms due to the coupling between the atom and the quantized electomagnetic field should be added into the system.
+
+First, there is a constant probability per unit time $\Gamma$ for decay from the excited state 1 to the ground state 0, so that we have
+\bea
+\left.\frac{d}{dt}\right|_R\rho_{11}=-\Gamma\rho_{11},\quad \left.\frac{d}{dt}\right|_R\rho_{00}=\Gamma\rho_{11}.
+\eea
+We also need to add a relaxation term for the off-diagonal coherences
+\bea
+\left.\frac{d}{dt}\right|_R\rho_{01}=-\gamma\rho_{01}, \quad \left.\frac{d}{dt}\right|_R\rho_{10}=-\gamma\rho_{10}.
+\eea
+
+The density operator is a legitimate density operator if and only if the relaxation terms are of what is known as the Lindblad form,
+\bea
+\mathcal{L}\rho=\sum_k\left[2L_k\rho L^{\dagger}_k-L^\dagger_kL_k\rho-\rho L^\dagger_kL_k\right],
+\eea
+where $L_k$ are some system operators. The evolution of the system (atom alone) is described by a master equation of the form
+\bea
+\dot{\rho}=-\frac{i}{\hbar}[H,\rho]+\cal{L}\rho.
+\eea
+
+For the damped two-level system, it is required that $\gamma\geq\Gamma/2$ to ensure the density operator remains positive. If only the spontaneous-emission damping is considered, we can explicitly choose $\gamma=\Gamma/2$. The Lindblad operator is
+\bea
+L=\sqrt{\gamma}\ket{0}\bra{1}.
+\eea
+
+We then have the explicit equations of motion of the elements of the density operator in the matrix form:
+\bea
+\dot{\rho}_{00}&=&\Gamma\rho_{11}+\frac{1}{2}i(\Omega^*\rho_{10}-\Omega\rho_{01}),\nonumber\\
+\dot{\rho}_{11}&=&-\Gamma\rho_{11}-\frac{1}{2}i(\Omega^*\rho_{10}-\Omega\rho_{01}),\nonumber\\
+\dot{\rho}_{01}&=&(i\Delta-\gamma)\rho_{01}+\frac{1}{2}i\Omega^*(\rho_{11}-\rho_{00}),\nonumber\\
+\dot{\rho}_{10}&=&(-i\Delta-\gamma)\rho_{10}-\frac{1}{2}i\Omega(\rho_{11}-\rho_{00})=(\dot{\rho}_{01})^*.
+\label{TWO_LEVEL_EQ}
+\eea
+
+Eqs.~\eq{TWO_LEVEL_EQ}, together with the condition of unit trace $\rho_{00}+\rho_{11}=1$, has a steady-state solution as
+\bea
+\rho_{11}=1-\rho_{00}=\frac{\abs{\Omega}^2/4}{\Delta^2+\gamma^2+\abs{\Omega}^2/2},\quad\rho_{10}=(\rho_{01})^*=\frac{\frac{1}{2}\Omega(i\gamma+\Delta)}{\Delta^2+\gamma^2+\abs{\Omega}^2/2}.
+\label{STEADY_STATE}
+\eea
+$\Gamma\rho_{11}$ stands for the probability per unit time that an atom in an excited state falls down to the ground state. According to the solution of $\rho_{11}$ in ~\eq{STEADY_STATE}, the fluorescence intensity behaves as a function of detuning as a Lorentzian with the maximum at $\Delta=0$ and with the half width at half maximum, HWHM, $\gamma^\prime=\sqrt{\gamma^2+\abs{\Omega}^2/2}$.  In the weak-field approximation, the power broadening from the Rabi frequency becomes negligible, thus the HWHM would be close to the natural width $\gamma$. Again, just as the Einstein $A$ and $B$ coefficient, $\Gamma$  and $\gamma$ are also introduced as phenomenological constants.
+\subsection{Polarizability of a two-level atom}
+Besides the fluorescence, our strongest interest still lies in the light propagation in a polarizable medium. In the previous section about local-field correction, our discussion ended up with the relation between the susceptibility of the medium $\chi$ and the atomic polarizability $\alpha$. Now let us move on to the expression of $\chi$ for a two-level medium.
+
+Starting from Maxwell's equations in a medium, we have for the electric field an inhomogeneous wave equation
+\bea
+-\nabla^2\bE+\frac{1}{c^2}\frac{\partial^2\bE}{\partial t^2}=-\frac{1}{\epsilon_0c^2}\frac{\partial^2\bf P}{\partial t^2},
+\label{WAVE_EQ}
+\eea
+where $\bf P$ is the polarization of the medium and $c=1/\sqrt{\mu_0\epsilon_0}$ is the speed of light in vacuum.
+
+For plane waves propagating in the $+z$ direction, the electric field and the polarization can be in the forms
+\bea
+\bE(\br,t)&=&\frac{1}{2}e^{i(kz-\omega t)}\mathcal E(z,t)\hat{\bf e}+c.c.,\\
+\bf P(\br,t)&=&\frac{1}{2}e^{i(kz-\omega t)}\mathcal P(z,t)\hat{\bf e}+c.c.
+\eea
+The amplitudes $\mathcal E$ and $\mathcal P$ are then supposed to vary slowly in time and space compared with the exponentials. This is called the slowly-varying envelope approximation (SVEA). 
+
+We assume that
+\bea
+\abs{\frac{\partial\mathcal E}{\partial t}}\ll \omega\abs{\mathcal E}, \quad \abs{\frac{\partial\mathcal E}{\partial z}}\ll k\abs{\mathcal E}, 
+\eea
+where $k=\omega/c$ and similarly for $\mathcal P$. Neglecting the higher-order derivatives, then Eq.~\eq{WAVE_EQ} is reduced to 
+\bea
+\frac{\partial \mathcal E}{\partial z}+\frac{1}{c}\frac{\partial \mathcal E}{\partial t}=i\frac{k}{2\epsilon_0}\mathcal P.
+\label{BASIC_EQ}
+\eea
+
+As an example, consider the case when the electric field amplitude is stationary and the response of the medium is linear:
+\bea
+\frac{\partial \mathcal E}{\partial t}=0, \quad \mathcal P=\epsilon_0\chi\mathcal E.
+\eea
+Let us break the susceptibility $\chi$ into real and imaginary parts as $\chi=\chi^\prime+i\chi^{\prime\prime}$, the solution to Eq.~\eq{BASIC_EQ}  is then
+\bea
+\mathcal E(z)=\mathcal E(0)e^{\frac{1}{2}k(i\chi^\prime-\chi^{\prime\prime})z}.
+\eea
+
+It turns out that the intensity of the light will go down along the direction of propagation:
+\bea
+I(z)\propto\abs{\mathcal E(z)}^2\propto e^{-k\chi^{\prime\prime}z}.
+\eea
+This is just the familiar Beer-Lambert law.
+
+Next, for the Rabi frequency $\Omega=\bd\cdot\cbE/\hbar$, we assume that $\cbE$ and $\bd$ are proportional to the same real unit vector $\hat {\bf e}$, write
+\bea
+\bd=d\hat{\bf e}, \quad \cbE=e^{ikz}\mathcal E(z)\hat{\bf e},
+\eea
+then we have
+\bea
+\Omega=\Omega(z)=de^{ikz}\mathcal E(z).
+\eea
+
+On the other hand, the observed dipole moment is given by the expectation value of the dipole moment operator
+\bea
+\bd=\langle\hat{\bd}\rangle=Tr\left(\hat{\bd}\rho\right)\hat{\bf e}=(d\rho_{01}+d^*\rho_{10})\hat{\bf e}.
+\eea
+
+Now we take the steady-state solution ~\eq{STEADY_STATE}, and restore the oscillations at the frequency $\omega$ that were eliminated in the rotating frame, we have
+\bea
+\bd(z,t)&=&\langle\hat{\bd}\rangle(z,t)=\frac{\abs{d}^2(i\gamma+\Delta)/2\hbar}{\Delta^2+\gamma^2+\abs{\Omega}^2}\mathcal E(z)e^{i(kz-\omega t)}\hat{\bf e}+c.c.\nonumber\\
+&=&\frac{1}{2}d(z)e^{i(kz-\omega t)}\hat{\bf e}+c.c.
+\eea
+with
+\bea
+d(z)=\frac{d^2}{\hbar}\frac{i\gamma+\Delta}{\Delta^2+\gamma^2+\abs{\Omega}^2/2}\mathcal E(z)=\alpha\mathcal E(z).
+\eea
+Here $\alpha=\frac{d^2}{\hbar}\frac{i\gamma+\Delta}{\Delta^2+\gamma^2+\abs{\Omega}^2/2}$ is the polarizability of a two-level atom.
+
+\subsection{Absorption of two-level medium and Lorentz-Lorenz shift}
+In the weak-field approximation, the atomic polarizability turns out to be
+\bea
+\alpha=-\frac{d^2}{\hbar}\frac{1}{\Delta+i\gamma},
+\label{POLARIZABILITY}
+\eea
+which exhibits a linear response of the atom to the field.
+
+Note that inside a two-level medium, $\mathcal E(z)$ stands for the local field at the position of an atom, so the local-field correction should be applied. Consequently, we can use the Clausius-Mossotti equation to obtain the susceptibility. Substitute ~\eq{POLARIZABILITY} to Eq.~\eq{LLLAW}, we have
+\bea
+\chi=\frac{N\alpha}{1-\frac{1}{3} N\alpha}=\frac{Nd^2/\hbar}{\Delta-\Delta_{LL}+i\gamma}.
+\eea
+where $\Delta_{LL}=-\frac{Nd^2/\hbar}{3\epsilon_0}$ is known as the Lorentz-Lorenz (LL) shift, which is brought by the local-field correction.
+
+As discussed above, the absorption coefficient of the medium is
+\bea 
+a=k\Im(\chi)=a_0\frac{\gamma^2}{(\Delta-\Delta_{LL})^2+\gamma^2}.
+\eea
+Here
+\bea
+a_0=\frac{d^2kN}{\hbar\gamma\epsilon_0}.
+\eea
+
+Therefore, it is expected that the absorption spectrum of a two-level medium with low light intensity would have a Lorentzian shape and the HWHM is $\gamma$, but the resonance would be shifted by $\Delta_{LL}$.
+
+Later, we will see that the LL shift serves as the generic frequency scale for other density dependent phenomena in an atomic sample such as the collective Lamb shift (CLS). 
+
+
+
+

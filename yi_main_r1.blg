@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: yi_main_r1.aux
+The style file: prsty.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: bib_summary.bib
+Warning--entry type for "OSG" isn't style-file defined
+--line 22 of file bib_summary.bib
+You've used 53 entries,
+            1872 wiz_defined-function locations,
+            853 strings with 12071 characters,
+and the built_in function-call counts, 10913 in all, are:
+= -- 389
+> -- 533
+< -- 0
++ -- 175
+- -- 111
+* -- 1007
+:= -- 1290
+add.period$ -- 53
+call.type$ -- 53
+change.case$ -- 4
+chr.to.int$ -- 0
+cite$ -- 53
+duplicate$ -- 531
+empty$ -- 1113
+format.name$ -- 164
+if$ -- 2518
+int.to.chr$ -- 0
+int.to.str$ -- 53
+missing$ -- 0
+newline$ -- 162
+num.names$ -- 53
+pop$ -- 328
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 877
+stack$ -- 0
+substring$ -- 650
+swap$ -- 339
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 35
+warning$ -- 0
+while$ -- 100
+width$ -- 55
+write$ -- 266
+(There was 1 warning)

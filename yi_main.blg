@@ -1,0 +1,45 @@
+This is BibTeX, Version 0.99c (TeX Live 2009)
+The top-level auxiliary file: yi_main.aux
+The style file: prsty.bst
+Database file #1: bib_summary.bib
+You've used 52 entries,
+            1872 wiz_defined-function locations,
+            850 strings with 12217 characters,
+and the built_in function-call counts, 10799 in all, are:
+= -- 386
+> -- 530
+< -- 0
++ -- 174
+- -- 111
+* -- 1015
+:= -- 1284
+add.period$ -- 52
+call.type$ -- 52
+change.case$ -- 3
+chr.to.int$ -- 0
+cite$ -- 52
+duplicate$ -- 525
+empty$ -- 1077
+format.name$ -- 163
+if$ -- 2475
+int.to.chr$ -- 0
+int.to.str$ -- 52
+missing$ -- 0
+newline$ -- 159
+num.names$ -- 52
+pop$ -- 321
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 855
+stack$ -- 0
+substring$ -- 672
+swap$ -- 344
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 28
+warning$ -- 0
+while$ -- 100
+width$ -- 54
+write$ -- 262

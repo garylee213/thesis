@@ -1,0 +1,87 @@
+\chapter{Introduction}
+
+\section{Light scattering and cooperative effects}
+
+Light scattering is the primary mechanism of physical observation. The state of the light field carries a great deal of information about the object with which the light has just interacted. A simple example is that one can tell the shape and color of an object by receiving the light scattered off its surface.
+
+%Along with the exploration of the essence of light itself, the application of light as an indispensable tool to study the property of matter has achieved tremendous success since the dawn of modern science. 
+ 
+With the development of physics, the models of light have kept getting more comprehensive. Beyond the simple ray model in geometrical optics, wave properties of light were introduced in the scope of physical optics. Later, within the framework of classical electrodynamics, light scattering could be explained satisfactorily. Examples include Rayleigh and Mie scattering. Both terms refer to discrete radiators in a liquid or gaseous medium, where each particle (e.g. an atom or a molecule) deflects the incoming light independently.
+
+Assuming the light wavelength is $\lambda$ and the dimension of a particle is $D$, in the small particle regime ($D\ll\lambda$), Rayleigh scattering would be observed~\cite{Lilienfeld:04}. In a description as an elastic scattering process, each particle is treated as a classical dipolar radiator that oscillates at the same frequency as the incoming electric field and then re-radiates the field outward. In Rayleigh scattering, the relative intensity of the scattered light is proportional to $\lambda^{-4}$. This is the reason for the blue sky; the shorter the wavelength, the more scattering in the direction of our eyes.
+
+When the size of the scattering particles is comparable to the wavelength ($D\sim\lambda$), the Rayleigh model breaks down. One can instead solve the Maxwell equations that describe a plane wave scattered by a homogenous sphere in terms of an infinite series of spherical harmonics. This solution describes Mie scattering~\cite{1908AnP...330..377M}.  There are some remarkable features about Mie scattering that make it different from Rayleigh scattering. For example, the intensity of the scattered light is generally higher in the forward direction than in the backward direction; the larger the particle, the more of the light is scattered in the forward direction. Rayleigh and Mie scattering have features similar to the light scattering processes in dense gases that we study in this dissertation.
+
+%The optical property of a medium hinges on the nature of light-matter interactions that take place inside it.
+
+In many cases light scattering is an important aspect of the optical response of a material sample to light. For example, light attenuation inside a medium of independent radiators may often be understood as scattering of light away from the incident beam. The relative intensity of the transmitted light may, of course, always be written in terms of the optical thickness (optical density, optical depth) $D$ of the sample as
+\bea
+I_{out}=I_{in}\,e^{-D}.
+\label{BEER'S_LAW}
+\eea
+In a common case the optical thickness is given by the thickness of the sample $h$, the total cross section of light scattering from the radiators $\sigma$, and the density of the scatterers $\rho$ in the form $D=\sigma\rho h$. This is known as the the Beer-Lambert law. It is, for instance, one of the theoretical bases of absorption imaging, a commonly used technique to extract information about the sample in cold-atom experiments. 
+
+%Another possibility that this law fails could happen when the light is quite intense, the nonlinear optical processes will then alter the bulk property of the sample.
+
+
+%(cooperative effects; time domain: superradiance; frequency domain: CLS)~\cite{PhysRevLett.112.113603}
+
+%(mean-field theory; continuous medium; independent radiators; interacting radiators.)
+
+%(light-matter interaction: from simple to complex: classical scattering, attenuation, fluorescence, polarization of a medium, ensemble-light interfaces)
+
+%The Beer-Lambert law does not distinguish microscopic mechanisms of the light attenuation, such as absorption and scattering by atoms in the sample. Moreover, it also neglects all the other attributes of the light except the intensity. 
+
+%\section{The role of light in modern physics}
+
+In the era of modern physics, the role of light scattering is even more important. Of course, light is still a natural and feasible way of probing the state of the material with which it interacts. For example, at the time of the first realizations of Bose-Einstein condensates~\cite{Anderson14071995,PhysRevLett.75.3969}, the properties of light scattering from BECs were widely discussed~\cite{PhysRevA.43.6444,PhysRevA.51.3896,PhysRevA.52.3033,PhysRevLett.71.1339}  and a number of proposals for employing light scattering to detect BECs were raised. Characteristic details in the line shape for light scattered from BECs were predicted for different configurations~\cite{PhysRevLett.72.2375,PhysRevA.50.R3565,PhysRevLett.75.1927,PhysRevLett.76.1774,PhysRevA.54.R2543}. Though much trickier than one might wish, it is in principle possible to verity the existence of a Bose-Einstein condensate by spectral measurements of the scattered radiation from an atomic sample. Another example of theoretical proposal is probing quantum statistics of atoms in an optical lattice by light scattering~\cite{PhysRevA.76.053618}. In practice, for instance, an experiment that uses light scattering to determine the relative phase of two Bose-Einstein condensates has been carried out~\cite{Saba25032005}.
+
+Furthermore, in the context of quantum measurement theory, light scattering is likely to be a common probe for nondestructive measurements~\cite{RevModPhys.68.1}, continuous observation, and feedback control. For example, a nondestructive measurement to probe the quantum state of a 1D Bose gas using off-resonant light scattering was proposed\cite{PhysRevLett.107.270403}. Another example is monitoring continuously and non-destructively the number of atoms in a Bose-Einstein condensate by light scattering as the atoms oscillate back and forth between two sides of a double-well trap\cite{NJP.JJ}.
+
+From an even broader perspective, understanding light-matter interactions, including light scattering, is critical for the work on controlling quantum systems, which in turn opens the way for practical techniques such as quantum computer and quantum communication. One approach to control the light-matter interaction is cavity quantum electrodynamics (cavity QED)~\cite{0034-4885-69-5-R02}. In general, a weak coupling between the cavity field and the atoms leads to modifications of the internal state of the atoms. In the strong coupling case, atoms and photons are entangled, this being the basis for many interesting applications.  Many fascinating experiments have been performed on  phenomena such as  photon blockade~\cite{photon_blockade}.
+
+Another way to control light-matter interactions is to interface light with an atomic ensemble. To be specific,  optically thick atomic ensembles can be efficiently interfaced with light so that the quantum features of light-matter interactions are preserved~\cite{RevModPhys.82.1041}. In recent years, this approach has become a very active area of research. Nonetheless, developing a thorough understanding of the optical response of a dense atomic ensemble to light is a challenging task. Suppose that light scatters repeatedly  between the atoms. Comparing to ensembles of independent or weakly correlated atoms, strong correlations between the atoms induced by multiple scattering may dramatically alter the way the light and the atoms interact.  In effect, the entire material sample may respond cooperatively to light.
+
+Experimentally, the cooperative effects in light scattering have been studied intensively in recent decades.  Superradiant Rayleigh scattering from a Bose-Einstein condensate was studied\cite{Inouye23071999,PhysRevLett.83.5202,PhysRevA.62.063615} and cooperative Mie scattering from an ultracold atomic cloud was observed\cite{PhysRevA.82.011404}. Moreover, recent experiments demonstrated that the density fluctuations in the atomic cloud tend to suppress cooperativity\cite{PhysRevLett.104.183602}, and that the cooperativity generates a shift of the optical transition frequency that depends on the density and geometry of the atomic sample\cite{PhysRevLett.108.173601}. The cooperative effects also lead to the phenomenon that the radiation pressure of a laser beam would be modified by the scattered photons\cite{Eur.Phys.J.D.58.1}.
+
+The importance of light-matter interaction calls for more insights into cooperative effects in a medium when light passes through. However, analysis of cooperative response of a dense medium is a challenge because of the combination of the strong short-range divergence $(1/r^3)$ and the long range $(1/r, $ for radiating atoms$)$ of the dipolar field and the ensuing dipole-dipole interactions. The literature is replete with approximations\cite{FRIEDBERG1973101}. In this dissertation we promote an alternative approach, numerical simulations of classical light propagating in a medium of classical induced dipoles. Starting from quantum field theory for both atoms and light, it has been shown\cite{PhysRevA.55.513} that such an approach is valid and gives the same results as the full quantum theory basically when photon recoil and saturation of the atoms may be neglected. We develop software objects in C++ to carry out classical light propagation studies in an (in principle) arbitrary collection of classical dipoles, and use them to understand the emergence of the cooperative effects in common geometries. Our early simulations of inhomogeneously broadened samples with stationary atoms have sharpened and modified traditional theory of cooperative effects. The more recent simulations with moving atoms verify existing theoretical predictions and reveal new features in spectroscopic observations that can also be categorized as cooperative.
+
+
+\section{Outline}
+
+In Chapter 2, the theoretical basis of the research is reviewed. A fundamental notion of quantum optics, the semi-classical theory of the interaction between a two-level atom and a classical light field, is briefly reviewed. The polarizability of an atom regarded as a damped two-level system is particularly emphasized. Additionally, we introduce the local-field corrections,  Clausius-Mossotti relation, and the Lorentz-Lorenz formula in this chapter. These are critical in discussions of cooperative effects that we will have later in the dissertation.
+
+Chapter 3 qualitatively describes two typical of cooperative effects in a system of strongly interacting dipoles. While observing the spontaneous emission from a dense sample, the emitted field intensity is much stronger and the duration of the pulse is much shorter than would be the case for  independent atoms. We recap Dicke's pioneering work on superradiance in this chapter. On the other hand, in the frequency domain, besides the generic Lorentz-Lorenz shift  in the absorption spectrum brought on by the local-field corrections, another type of shift called collective Lamb shift can be observed in a dense sample because atoms are correlated with the virtual photons of the QED vacuum. We emphasize superradiance and CLS here as they are phenomena that repeatedly come up in our research. In the last section of this chapter, the exact definition of cooperativity is discussed before we embark on further calculations and simulations.
+
+The primary technique of our research, classical-electrodynamics simulations, is introduced in the beginning of Chapter 4. After a discussion of the validity and scope of application of our simulations, we firstly solve the problem of light scattering from a single atom and a two-atom system. Then detailed calculations are carried out on a hypothetical cloud of independent radiators whose spatial distribution is Gaussian.  When dipole-dipole interactions are added to this Gaussian cloud, we find from the simulations that the cooperative effects in emission intensity show up at an unexpectedly low density. The simulation of the Gaussian cloud is followed by a more realistic simulation of a dense gas in a circular disk container. The most important technical addition in this instance is an artificial inhomogeneous broadening of the atomic sample. We find that such a broadening in the system of discrete radiators leads to a close agreement with the traditional predictions of the collective Lamb shift.
+
+In Chapter 5, an important feature is added to the simulations: the motion of the atoms. When atom-atom collisions, collisions of the atoms with the walls of the container,  and the free flight in between are taken into account, the model becomes more comprehensive and hence displays more intriguing phenomena. Both a semi-analytical treatment of a single atom and the simulations of independent atoms show a narrow resonance peak in the absorption spectrum. This is a clear signature of Dicke narrowing due to atomic collisions. Again, things are different when the atoms are strongly correlated. When we introduce the dipole-dipole interactions between the atoms, the dependence of the collective Lamb shift on sample thickness appears to follow the traditional predictions. However, the width of the resonance becomes another signature of cooperativity.  A transition from a clearly Dicke narrowed peak in a dilute gas to a greatly broadened peak in a optically dense sample is observed in the simulations.
+
+Finally, we summarize our work in Chapter 6. We also survey possible future directions for related studies.
+
+
+%Apparently, the success of classical scattering theories such as Rayleigh and Mie scattering results from the fact that the model with classical dipoles is much more realistic than the continuous-medium model. 
+
+%However, it doesn't end here. The fundamental principles that rule the real world is quantum, not classical, including both sides of the light-matter interactions. Quite a lot of optical phenomena could only be interpreted by quantum theories. A prime example is the spontaneous emission of atoms.
+
+%A well known semi-classical description of spontaneous transitions is given by the Einstein A and B coefficients. In this framework, the atom is quantized but the electromagnetic field is not. 
+
+%In an ordinary fluorescence experiment of two-level atoms, assume that the sample has $N(0)$ atoms initially prepared in the upper level, then the number of excited atoms at time $t$ is given by
+%\bea
+%N(t)=N(0)e^{-At}=N(0)e^{-\Gamma t}=N(0)e^{-t/\tau},
+%\eea
+%where the Einstein A coefficient is just the spontaneous decay rate $\Gamma$, which in turn equals to the reciprocal of the lifetime $\tau$.
+
+%The fundamental mechanism of spontaneous transition can only be explained by a quantized electromagnetic field. In quantum electrodynamics, the spontaneous transition in free space is a consequence of the interaction between the atom and the QED vacuum. In the dipole approximation, the rate of spontaneous emission $\Gamma$ is given by
+%\bea
+%\Gamma=\frac{k^3d^2}{3\pi\hbar\epsilon_0}.
+%\eea
+%Given a sample composed of independent atoms, due to the infinite number of degrees of freedom of the electromagnetic field, the radiation pattern of the spontaneous emission would be essentially isotropic.
+
+%In summary, if the constituent particles are treated as independent radiators, i.e., the sample is sufficiently dilute so the interaction between particles is neglected, the eventually observable electromagnetic field from a sample can be predicted as a simple superposition of the post-interaction fields (photons) from all the particles in the sample. The interacting field can be vacuum or not.
+
+
+
+
+
+

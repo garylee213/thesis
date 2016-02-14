@@ -1,0 +1,105 @@
+\documentclass[
+  12pt      
+  ,letterpaper
+  ,center
+  ,noupper
+  ]{uconnthesis}
+\ThesisLineSpacing{2}
+\usepackage{graphicx}  % needed for figures
+\usepackage{subeqnarray}
+\usepackage{cases}
+\usepackage{bm}        % for math
+\usepackage{amssymb}   % for math
+\usepackage{epstopdf}
+
+\newcommand{\adag}{\ensuremath{a^{\dagger}}}
+\newcommand{\bdag}{\ensuremath{b^{\dagger}}}
+\newcommand{\cdag}{\ensuremath{c^{\dagger}}}
+\newcommand{\ddagg}{\ensuremath{d^{\dagger}}}
+\newcommand{\ket}[1]{\ensuremath{\left| #1 \right\rangle}}
+\newcommand{\bra}[1]{\ensuremath{\left\langle #1 \right|}}
+\newcommand{\braket}[2]{\ensuremath{\left\langle #1 \right|\left. #2\right\rangle}}
+\newcommand{\mele}[3]{\ensuremath{\left\langle #1 \right|#2\left| #3\right\rangle}}
+\newcommand{\dyad}[2]{{\ket{#1}\!\!\bra{#2}}}
+\newcommand{\norm}[1]{\ensuremath{\left\| #1 \right\|}}
+\newcommand{\abs}[1]{\ensuremath{\left| #1 \right|}}
+\newcommand{\To}{\ensuremath{\rightarrow}}
+\newcommand{\from}{\ensuremath{\leftarrow}}
+\newcommand{\funE}{\ensuremath{\mathcal{E}}}
+\newcommand{\beq}{\begin{equation}}
+\newcommand{\eeq}{\end{equation}}
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+\newcommand{\mbf}[1]{\ensuremath{\mathbf{#1}}}
+\newcommand{\eq}[1]{{(\ref{#1})}}
+\newcommand{\commentout}[1]{{}}
+\newcommand{\idx}{{l}}
+\newcommand{\half}{{\hbox{$\frac{1}{2}$}}}
+\newcommand{\Kappa}{{\cal K}}
+\newcommand{\bE}{{\bf E}}
+\newcommand{\br}{{\bf r}}
+\newcommand{\cbE}{\boldsymbol{\mathbf{\cal E}}}
+\newcommand{\cbP}{\boldsymbol{\mathbf{\cal P}}}
+\newcommand{\dip}{{\cal D}}
+\newcommand{\bdip}{\boldsymbol{\mathbf{\cal D}}}
+\newcommand{\G}{{\sf G}}
+\newcommand{\bd}{{\bf d}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\ja}[1]{\red{#1}}
+\newcommand{\js}[1]{\textcolor{blue}{\textst{#1}}}
+
+\begin{document}
+\bibliographystyle{prsty}
+
+\abstract{
+At high density, dipole-dipole interactions between the atoms may have a major impact on light propagation in a dense gas. We have developed a classical-electrodynamics simulation to study the cooperative response of a near-resonant gas to light. We take into account the motion of the radiators using classical trajectories, including collisions with the walls of the container and atom-atom collisions, and describe the transition from homogeneously broadening to inhomogeneously broadened phenomenology.
+}
+
+\title{Cooperative Effects in the Optical Response of Dense Atomic Gases}
+\author{Yi Li}
+\authorspreviousdegreelong{
+  B.S., University of Science and Technology of China, Hefei, China, 2007 \\
+  M.S., University of Connecticut, 2010
+  }
+\authorspreviousdegreeshort{M.S.}
+
+\MajorAdvisor{Juha Javanainen}
+\AssociateAdvisorA{Robin C\^ot\'e}
+\AssociateAdvisorB{William Stwalley}
+
+\dedication{
+To ...
+  }
+
+\acknowledgements{
+Thank you.
+  }
+
+\maketitle
+\frontmatter
+\tableofcontents
+\listoffigures
+\listoftables
+
+\mainmatter
+
+\input{chapter1_r1.tex}
+\input{chapter2_r1.tex}
+\input{chapter3_r1.tex}
+\input{chapter4_r1.tex}
+\input{chapter5_r1.tex}
+\input{chapter6_r1.tex}
+
+
+
+
+\bibliography{bib_summary}
+
+
+
+% appendices: we put them after the references in what ever order
+% we prefer
+%\input{appendices/dsmethod.tex}
+\end{document}
+

@@ -1,0 +1,37 @@
+\contentsline {chapter}{\numberline {1.}Introduction}{1}
+\contentsline {section}{\numberline {1.1}Light scattering and cooperative effects}{1}
+\contentsline {section}{\numberline {1.2}Outline}{6}
+\contentsline {chapter}{\numberline {2.}Semiclassical Theory of Interaction between Two-level Atom and Classical Light}{9}
+\contentsline {section}{\numberline {2.1}Electrodynamics of a polarizable medium: Local-fleld correction and Clausius-Mossotti equation}{9}
+\contentsline {section}{\numberline {2.2}Interaction of a two-level atom with a classical field}{11}
+\contentsline {subsection}{\numberline {2.2.1}Einstein $A$ and $B$ coefficients}{11}
+\contentsline {subsection}{\numberline {2.2.2}Damped two-level system}{13}
+\contentsline {subsection}{\numberline {2.2.3}Polarizability of a two-level atom}{16}
+\contentsline {subsection}{\numberline {2.2.4}Absorption of two-level medium and Lorentz-Lorenz shift}{19}
+\contentsline {chapter}{\numberline {3.}Cooperativity in a strongly interacting dipolar system}{21}
+\contentsline {section}{\numberline {3.1}The Dicke model of superradiance (A qualitative description)}{21}
+\contentsline {section}{\numberline {3.2}Collective Lamb shift}{25}
+\contentsline {section}{\numberline {3.3}What is cooperativity?}{28}
+\contentsline {chapter}{\numberline {4.}Optical Response of Gases of Stationary Atoms}{31}
+\contentsline {section}{\numberline {4.1}From quantum field theory to classical simulation}{31}
+\contentsline {section}{\numberline {4.2}Preparation}{34}
+\contentsline {section}{\numberline {4.3}Calculation: Radiation from a single atom}{38}
+\contentsline {section}{\numberline {4.4}Calculation: Radiation from two atoms}{41}
+\contentsline {section}{\numberline {4.5}Radiation Power of Gaussian Clouds of Atoms}{47}
+\contentsline {subsection}{\numberline {4.5.1}Continuous Medium}{47}
+\contentsline {subsection}{\numberline {4.5.2}Independent Radiators}{49}
+\contentsline {subsection}{\numberline {4.5.3}Simulation of the scattered light power}{53}
+\contentsline {section}{\numberline {4.6}Shifts of a Resonance Line of Gases in a Circular Disk}{54}
+\contentsline {chapter}{\numberline {5.}Gases of Moving Atoms}{63}
+\contentsline {section}{\numberline {5.1}Calculation of A One-atom Gas}{65}
+\contentsline {subsection}{\numberline {5.1.1}Dipole Evolution of the Atom}{66}
+\contentsline {subsection}{\numberline {5.1.2}The Optical Thickness}{70}
+\contentsline {subsection}{\numberline {5.1.3}A Simplified Multiple-Atom Gas}{73}
+\contentsline {section}{\numberline {5.2}Simulations of Multiple-atom Gases}{76}
+\contentsline {subsection}{\numberline {5.2.1}Procedure and Validity of the Simulation Program}{76}
+\contentsline {subsubsection}{The Initial State of the Evolution}{76}
+\contentsline {subsubsection}{Integrating the Evolution Equations and Sampling}{77}
+\contentsline {subsubsection}{Collective Lamb Shift: Replicating the Result from Stationary-Atom Simulations}{78}
+\contentsline {subsection}{\numberline {5.2.2}Broadening of the Dicke-narrowed lineshape in a Dense Gas}{79}
+\contentsline {chapter}{\numberline {6.}Conclusion}{83}
+\contentsline {part}{Bibliography}{85}

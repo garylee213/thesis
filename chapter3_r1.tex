@@ -1,7 +1,7 @@
 \chapter{Cooperativity in a Strongly Interacting Dipolar System}
-%In a dense atomic sample, each atom is immersed in a total field composed of the incident field plus the radiated fields from all the other atoms in the sample. 
 
-Correlation between the atoms is the origin of various cooperative effects in a dense medium. %In the recent decades, the cooperative effects in light scattering have been studied in a variety of experiments.  Superradiant Rayleigh scattering from a Bose-Einstein condensate was studied\cite{Inouye23071999,PhysRevLett.83.5202,PhysRevA.62.063615} and cooperative Mie scattering from an ultracold atomic cloud was also observed\cite{PhysRevA.82.011404}. Moreover, recent experiments demonstrated that the density fluctuations in the atomic cloud tend to suppress cooperativity\cite{PhysRevLett.104.183602}, and that the cooperativity generates a shift of the optical transition frequency that depends on the density and geometry of the atomic sample\cite{PhysRevLett.108.173601}. The cooperative effects also lead to the phenomenon that the radiation pressure of a laser beam would be modified by the scattered photons\cite{Eur.Phys.J.D.58.1}.
+Correlation between the atoms is the origin of various cooperative effects in a dense medium. 
+
 Cooperativity is the major subject of our research. In this chapter we will discuss several typical examples of cooperative effects. We will also attempt to draw the line: Which effects are, and which are not, cooperative?
 
 \section{The Dicke model of superradiance: A qualitative description}
@@ -18,9 +18,9 @@ d_{3i}=\frac{1}{2}\left(\ket{2}\bra{2}-\ket{1}\bra{1}\right).
 \eea
 The $d_{\pm i}$ and $d_{3i}$ operators obey the commutation rules
 \bea
-[d_{3i},d_{\pm i}]=\pm\delta_{ij}d_{\pm i}; \quad [d_{+i},d_{-i}]=2\delta_{ij}d_{3i},
+[d_{3i},d_{\pm i}]=\pm\delta_{ij}d_{\pm i}, \quad [d_{+i},d_{-i}]=2\delta_{ij}d_{3i},
 \eea
-and the dipole operator of the $i$th atom can be written
+and the dipole operator of the $i$th atom can be written as
 \bea
 \bd_i = \left(d_{+i}+d_{-i}\right)\dip\hat{\bf{e}}.
 \eea 
@@ -30,7 +30,7 @@ We assume that at time $t=0$, the $N$ two-level atoms are all prepared in the up
 \ket \psi_{t=0}=\ket{2,2,\dots,2}.
 \label{INSTATE}
 \eea
-Another important assumption here is that the atom-field coupling is invariant under all atomic permutations. This is where the restriction to a small volume enters: If the atoms are well within the wavelength of light, they all couple to the light in the same way. Now, an atom with two states is isomorphic with a spin-1/2 system; say, state $\ket2$ is spin up and $\ket1$ is spin down. The operators $d_{\pm i}$ and $d_{3i}$ are correspondingly analogous to Pauli spin matrices. If the initial state [such as~\eq{INSTATE}] and the couplings between the atoms do not distinguish between the atoms, it turns out that the system of $N$ such spins 1/2 always stays in the manifold of states with the total angular momentum $J=N/2$. 
+Another important assumption here is that the atom-field coupling is invariant under all atomic permutations. This is where the restriction to a small volume enters: If the atoms are well within the wavelength of light, they all couple to the light in the same manner. Now, an atom with two states is isomorphic with a spin-1/2 system: say, state $\ket2$ is spin up and $\ket1$ is spin down. The operators $d_{\pm i}$ and $d_{3i}$ are correspondingly analogous to Pauli spin matrices. If the initial state [such as~\eq{INSTATE}] and the couplings between the atoms do not distinguish between the atoms, the system of $N$ such spins 1/2 always stays in the manifold of states with the total angular momentum $J=N/2$. 
 
 In this case we can use the states of the total spin $\ket{JM}$ to represent the states in which $J+M$ atoms are in the upper level and $J-M$ atoms in the lower level,
 \bea
@@ -74,16 +74,15 @@ This agrees with the discussion of the damped two-level system in the previous c
 W_N=\Gamma\langle D_+D_-\rangle=\Gamma(J+M)(J-M+1).
 \eea
 
-Initially, all atoms are excited, i.e., $M=J$ and $W_N=2J\Gamma=N\Gamma$. As photons are being emitted, atoms flip from the upper to the lower state. When half of the atoms are de-excited, we have $M=0$ and $W_N=\Gamma J(J+1)=\frac{1}{2}N(\frac{1}{2}N+1)$. That is to say, in collective spontaneous emission the maximum rate of emission is proportional to $N^2$. We expect a stronger and shorter pulse of fluorescence from such a strongly correlated system than from a collection of independent two-level atoms. This amplification is a signature of cooperative effects. However, as we will see later, such an amplification is not sufficient to assert cooperativity.
+Initially, all atoms are excited, i.e., $M=J$ and $W_N=2J\Gamma=N\Gamma$. As photons are being emitted, atoms flip from the upper to lower state. When half of the atoms are de-excited, we have $M=0$ and $W_N=\Gamma J(J+1)=\frac{1}{2}N(\frac{1}{2}N+1)$. That is to say, in collective spontaneous emission the maximum rate of emission is proportional to $N^2$. We expect a stronger and shorter pulse of fluorescence from such a strongly correlated system than from a collection of independent two-level atoms. This amplification is a signature of cooperative effects. However, as we will see later, such an amplification is not sufficient to assert cooperativity.
 
 In the qualitative analysis above, the $N$ atoms are treated as a full quantum system. Superradiance is then derived as a collective spontaneous emission of such a system. Another point of view closer to a semi-classical analysis emphasizes field amplification and stimulated emission of atoms due to the field emitted from the other atoms. We will skip the details of this alternative approach for now. 
 
 \section{Collective Lamb shift}
-%In the semi-classical theory of the damped two-level system, the rate of spontaneous emission is introduced as a phenomenological constant. In quantum electric dynamics (QED), the spontaneous emission results from the coupling between the atom and the QED vacuum, or the ground state of the quantized electromagnetic field. Superradiance, as a collective phenomenon, is originated from the coupling between the quantum atomic system and the QED vacuum.
 
-Another well-known phenomenon due to the quantum property of the electromagnetic field is the Lamb shift. It is due to the fluctuation of the QED vacuum that perturb the atom; or, we can attribute it to the emission and re-absorption of virtual photons by the atom.
+Another well-known phenomenon due to the quantum property of the electromagnetic field is the Lamb shift. Such phenomenon is due to the fluctuation of the QED vacuum that perturb the atom; or, we can attribute it to the emission and re-absorption of virtual photons by the atom.
 
-Just like superradiance is the cooperative version of the ordinary spontaneous emission, in a strongly correlated atomic sample one should be able to observe the so-called collective (or cooperative) Lamb shift (CLS), which arises in the same way as the ordinary Lamb shift except that the atoms are correlated and the virtual photon that is emitted by one atom can be absorbed by another. Here we briefly outline the argument of Ref.~\cite{FRIEDBERG1973101}.
+Just like superradiance is the cooperative version of the ordinary spontaneous emission, in a strongly correlated atomic sample one should be able to observe the so-called collective (or cooperative) Lamb shift (CLS). This arises in the same way as the ordinary Lamb shift except that the atoms are correlated and the virtual photon that is emitted by one atom can be absorbed by another. Here we briefly outline the argument of Ref.~\cite{FRIEDBERG1973101}.
 
 We consider the same $N$-atom system as in the preceding section. For convenience, we define two operators on the $j$th atom
 \bea
@@ -93,13 +92,13 @@ such that
 \bea
 d_{+j}=d_{1j}+id_{2j},\quad d_{-j}=d_{1j}-id_{2j}.
 \eea
-The collective operators $D_{\pm}$, $D_3$ and $D^2$ are still as defined as in ~\eq{COLLECTIVE_OPERATORS}. It is easy to prove that $D^2$ has an equivalent form [[ALMOST SURE ABOUT THIS]]
+The collective operators $D_{\pm}$, $D_3$ and $D^2$ are still as defined as in ~\eq{COLLECTIVE_OPERATORS}. It is easy to prove that $D^2$ has an equivalent form
 \bea
 D^2=\sum_{i=1}^3\left(\sum_jd_{ij}\right)^2.
 \eea
 Corresponding to Dicke's $\ket{JM}$ states, the eigenvalues of $D_3$ and $D^2$ are $M$ and $J(J+1)$, respectively. So far, nothing is different from what we have done in the discussion of superradiance. 
 
-For atoms in a particular (not pointlike) geometry we need to account for the position-dependent propagation phases of light. For the moment, we introduce an arbitrary vector $\bf k$ and add factors $\exp(\pm i\bf k\cdot\br_j)$ into some of the operators that we have defined. We write [[ALMOST SURE ABOUT THIS]]
+For atoms in a particular (not point-like) geometry we need to account for the position-dependent propagation phases of light. For the moment, we introduce an arbitrary vector $\bf k$ and add factors $\exp(\pm i\bf k\cdot\br_j)$ into some of the operators that we have defined. We write
 \bea
 d^{\bf k}_{\pm j}=\exp(\pm i\mathbf{k}\cdot\br_j)d_{\pm j};\quad d^{\bf k}_{3j}=d_{3j};\quad D^{2\mathbf k}=\sum_{i=1}^3\left(\sum_jd^{\mathbf k}_{ij}\right)^2\!\!=J_{\bf k}(J_{\bf k}+1),
 \eea
@@ -126,7 +125,7 @@ The formalism of the Dicke states also ensures that the emission of radiation fr
 \Delta\Omega_{J_\mathbf k,M\to M-1}=\frac{\Delta E_{J_\mathbf k,M}-\Delta E_{J_\mathbf k,M-1}}{\hbar}.
 \eea
 
-Our interest lies primarily in a particular geometry, atoms in a slab, as recent experiments have been performed in this geometry and our simulations are primarily based on atoms in a slab as well. Consider a slab of thickness $h$ with uniform  atom density and infinite lateral extent and take $\bf k$ as normal to the slab thickness, then we can turn the summation in~\eq{E_SHIFT} into a spatial integral over the slab. Here we omit the details of the integration, but it should be noted that the form of $V_{ij}$ implies a singularity at $r_{ij}=0$. In reality, the singularity would not occur because the dipole approximation would break down when the atomic spacing is comparable to the atomic size. Mathematically, in order to avoid the divergence in the integral, we  add to the potential $V_{ij}$ the term $-\frac{1}{3}\dip^2\delta^3(r_{ij})$. This additional term brings in the local-field corrections and the LL shift.
+Our interest lies primarily in a particular geometry, atoms in a slab, as recent experiments have been performed under such conditions. Consider a slab of thickness $h$ with uniform  atom density and infinite lateral extent and take $\bf k$ as normal to the slab thickness, then we can turn the summation in~\eq{E_SHIFT} into a spatial integral over the slab. Here we omit the details of the integration, but it should be noted that the form of $V_{ij}$ implies a singularity at $r_{ij}=0$. In reality, the singularity would not occur because the dipole approximation would break down when the atomic spacing is comparable to the atomic size. Mathematically, in order to avoid the divergence in the integral, we  add to the potential $V_{ij}$ the term $-\frac{1}{3}\dip^2\delta^3(r_{ij})$. This additional term brings in the local-field corrections and the LL shift.
 In conclusion, the total shift of the resonance line for such a slab of an atomic sample is given by
 \bea
 \Delta_L=\Delta_{LL}-\frac{3}{4}\Delta_{LL}\left(1-\frac{\sin 2hk}{2hk}\right);\,\quad\Delta_{LL}=-\frac{\rho\mathcal{D}^2}{3\epsilon_0\hbar}.
@@ -138,11 +137,10 @@ In conclusion, the total shift of the resonance line for such a slab of an atomi
 
 Superradiance and CLS are two classic examples of cooperative effects. The fact that atoms in a medium are strongly correlated (strongly interacting, via the dipole-dipole interactions) alters the response of the medium to the external field, even if the field is the QED vacuum. However, before delving into the details, it is essential to comment on a definition of the core concept of our research, namely, cooperativity.
 
-First of all, one cannot determine whether a physical phenomenon is cooperative based on boilerplate qualitative behavior. As shown above, superradiant emission has $I\propto N^2$, but the dependence $I\propto N^2$ does not constitute a feature exclusively confined to superradiance. In other words, $I\propto N^2$ is not a reliable criterion of cooperativity. As we will see in the next chapter, under certain conditions, due to constructive interference of the radiation from the atoms, there may be many more ($\sim N^2$) photons available for detection than is the number of photons that the atoms would have emitted individually ($\sim N$), and this without any cooperative effects.
+First of all, one cannot determine whether a physical phenomenon is cooperative based on boilerplate qualitative behavior. As shown above, superradiant emission has $I\propto N^2$, but the dependence $I\propto N^2$ does not constitute a feature exclusively confined to superradiance. In other words, $I\propto N^2$ is not a reliable criterion of cooperativity. As we will see in the next chapter, under certain conditions, due to constructive interference of the radiation from the atoms, many more ($\sim N^2$) photons may be available for detection than what would have emitted individually ($\sim N$), and this is without any cooperative effects.
  
-
-Alternatively, one may think that a physical phenomenon should be defined as cooperative if it involves the modification of the field of an emitter due to the radiation from the other emitters. However, in this sense, the regular Beer's law given by Eq.~\eq{BEER'S_LAW} that describes usual light absorption indicates cooperative behavior by itself. Atoms down the sample see less light because the incoming light and the light emitted by the atoms upstream interfere destructively, and emit less light as a result.
+Alternatively, one may think that a physical phenomenon should be defined as cooperative if it involves the modification of the field of an emitter due to the radiation from other emitters. However, in this sense, the regular Beer's law given by Eq.~\eq{BEER'S_LAW} that describes usual light absorption indicates cooperative behavior by itself. Atoms down in the sample see less light because the incoming light and the light emitted by the atoms upstream interfere destructively, thereby emitting less light as a result.
 
 Our working definition of cooperativity is that the ensuing physics must not agree with the predictions of standard electrodynamics of polarizable media, such as the wave equation~\eq{WAVE_EQ}.  The subtext is that standard electrodynamics is an effective-medium mean-field theory. When a mean-field theory fails, condensed-matter physicists would call a system strongly correlated. Hence, we qualify only strongly correlated phenomena as cooperative.
 
-There are intriguing nuances to this theme. For instance, the classical Beer-Lambert law of light attenuation can be well explained by traditional electrodynamics of a polarizable medium. However, if we were to solve the propagation of light in a medium without the SVEA, Beer's law does not have to follow, and in fact does not necessarily follow. Violations of Beer's law need not signal cooperative behavior. On the other hand, it turns out that the eponymous collective Lamb shift ~\eq{CLS_1} may be derived from the usual continuous-medium electrodynamics, so that we would not qualify it as cooperative in the first place! One of the main aims of this thesis is to elaborate on the notion of cooperativity.
+However, this theme is not without intriguing nuances. For instance, the classical Beer-Lambert law of light attenuation can be well explained by traditional electrodynamics of a polarizable medium. However, if we were to solve the propagation of light in a medium without the SVEA, Beer's law does not have to follow, and in fact does not necessarily follow. Violations of Beer's law need not signal cooperative behavior. On the other hand, it turns out that the eponymous collective Lamb shift ~\eq{CLS_1} may be derived from the usual continuous-medium electrodynamics, so that we would not qualify it as cooperative in the first place! One of the main aims of this thesis is to elaborate on the notion of cooperativity.

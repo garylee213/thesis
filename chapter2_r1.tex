@@ -3,7 +3,7 @@
 \section{Electrodynamics of a polarizable medium: Local-field correction and Clausius-Mossotti relation}
 \label{LFC}
 
-In a dense liquid or gaseous medium, the electric field on an individual atom\footnote{From now on we generically refer to a dipolar radiator in a medium as an ''atom", even if many general results apply to any particles with dipole moments.} will be influenced by the fields from the other atoms. Conventionally, a mean-field theory (MFT) that represents the dipole moments of the atoms as a continuous polarization is used to study the field on the atom.  Consider the ``spectator'' atom in such a medium~\cite{feynman}. The field acting on the atom $\cbE_{loc}$ can be approximated by the field in a small spherical hole centered at the position of the atom. Imagine that this spherical hole is made by "scooping out" a sphere of the polarized material, let $\cbE$ be the average field in the medium, and $\cbE_{sphere}$ be the field inside the sphere if it were there. Because of the superposition principle we have
+In a dense liquid or gaseous medium, the electric field on an individual atom\footnote{From now on we generically refer to a dipolar radiator in a medium as an ``atom'', even if many general results apply to any particles with dipole moments.} will be influenced by the fields from the other atoms. Conventionally, a mean-field theory (MFT) that represents the dipole moments of the atoms as a continuous polarization is used to study the field on the atom.  Consider the ``spectator'' atom in such a medium~\cite{feynman}. The field acting on the atom $\cbE_{loc}$ can be approximated by the field in a small spherical hole centered at the position of the atom. Imagine that this spherical hole is formed by ``scooping out'' a sphere of the polarized material, let $\cbE$ be the average field in the medium, and $\cbE_{sphere}$ be the field inside the sphere if it were there. Because of the superposition principle we have
 \bea
 \cbE=\cbE_{loc}+\cbE_{sphere}.
 \label{E_MEAN}
@@ -20,7 +20,7 @@ Combining Eq.~\eq{E_MEAN} and Eq.~\eq{E_SPHERE}, we obtain the expression of the
 \cbE_{loc}=\cbE+\frac{\mathbf{\cbP}}{3\epsilon_0}.
 \label{LOCAL_FIELD}
 \eea
-The term $\cbP/3\epsilon_0$  is referred to as local-field correction. We will invoke this concept in later chapters when we discuss the interpretation of the results from approaches that go beyond the MFT.
+The term $\cbP/3\epsilon_0$  is referred to as local-field correction. We will invoke this concept in later chapters when we discuss the interpretation of the results from approaches that go beyond MFT.
 
 For now, we can take one more step forward. Assume $\alpha$ is the polarizability of each individual atom, so that in the field $\cbE_{loc}$ an atom develops the dipole moment $\bd = \alpha \cbE_{loc}$.  Taking the number density of the medium to be $\rho$, we have
 \bea
@@ -38,22 +38,22 @@ A comparison then shows that
 \eea
 This equation is the bridge between the bulk properties of the sample ($\chi$) and the response of an individual atom to the applied light ($\alpha$). 
 
-The exact form of $\alpha$ is determined by the internal structure of the atom and the nature of the light. We will see a specific example in later chapters. In the interim we note that the refractive index $n$ and the dielectric constant $\epsilon$ (one of the commonplace definitions) are related to susceptibility as follows,
+The exact form of $\alpha$ is determined by the internal structure of the atom and the nature of the light. We will see a specific example in later chapters. In the interim we note that the refractive index $n$ and the dielectric constant $\epsilon$ (one of the commonplace definitions) are related to susceptibility as follows:
 \beq
 n^2-1=\chi,\quad \epsilon=n\epsilon_0.
 \eeq
-Equation~\eq{LLLAW} may be cast in various forms in terms of these quantities. Two of them, Clausius-Mossotti relation and Lorentz-Lorenz formula, have been used apparently successfully for over a century to analyze dielectric properties of dense material samples.
+Equation~\eq{LLLAW} may be cast in various forms in terms of these quantities. Two of them, the Clausius-Mossotti relation and the Lorentz-Lorenz formula, have apparently been successfully used for over a century to analyze dielectric properties of dense material samples.
 
 \section{Interaction of a two-level atom with a classical field}
 
-Now let us get back to the problem of the response of a quantum two-level atom to a classical electric field, one of the simplest models for the atom-field interaction\cite{quantum_optics}. The semiclassical model allows us to extract essential features of atom-field interactions and provides rather satisfactory explanations to many optical phenomena. As a matter of fact, most of our research is primarily based on this model. Therefore, it is worthwhile to recap some core concepts here.
+Now let us get back to the problem of the response of a quantum two-level atom to a classical electric field: one of the simplest models for the atom-field interaction\cite{quantum_optics}. The semiclassical model allows us to extract essential features of atom-field interactions and provides rather satisfactory explanations to many optical phenomena. As a matter of fact, most of our research is primarily based on this model. Therefore, it is worthwhile to recap some core concepts here.
 
 \subsection{Einstein $A$ and $B$ coefficients}
 Einstein used $A$ and $B$ coefficients to formulate a purely phenomenological theory of  absorption and emission of light by an atom~\cite{quantum_optics,1982AmJPh..50..982H}.
 
 We assume $N$ identical two-level atoms, energy of the lower and higher levels  $E_1$ and $E_2$. The photon emitted or absorbed by the atom has an energy equal to the difference between two levels, i.e., $\hbar\omega_0=E_2-E_1$.
 
-Three processes exist simultaneously in the atom-field interaction: spontaneous emission, stimulated emission and absorption. Accordingly, there are three phenomenological constants $A_{21}$, $B_{21}$ and $B_{12}$. We assume the average energy density (per unit volume and unit frequency) of the electromagnetic field at the resonance frequency $U$, denote the populations of the lower and upper levels by $N_1$ and $N_2$, thus $N_1+N_2=N$, and write a rate equation for the populations
+Three processes exist simultaneously in the atom-field interaction: spontaneous emission, stimulated emission, and absorption. Accordingly, three phenomenological constants exists: $A_{21}$, $B_{21}$ and $B_{12}$. We assume the average energy density (per unit volume and unit frequency) of the electromagnetic field at the resonance frequency $U$, denote the populations of the lower and upper levels by $N_1$ and $N_2$, thus $N_1+N_2=N$, and write a rate equation for the populations
 \bea
 \frac{dN_1}{dt}=-\frac{dN_2}{dt}=A_{21}N_2+B_{21}U(\omega)N_2-B_{12}U(\omega)N_1.
 \label{AB_RATE}
@@ -109,13 +109,13 @@ In the {\em rotating-wave approximation\/} (RWA), we drop the terms that contain
 \frac{H}{\hbar}=-\Delta\ket{1}\bra{1}-\frac{1}{2}(\Omega\ket{2}\bra{1}+\Omega^*\ket{1}\bra{2}).
 \label{TRANS_H}
 \eea
-A maybe counterintuitive convention should be noted here. The detuning is defined as the difference between the frequency of the driving light and the atomic resonance frequency, hence the extra minus sign.
+A potentially counterintuitive convention should be noted here. Detuning is defined as the difference between the frequency of the driving light and the atomic resonance frequency, hence the extra minus sign.
 
-The Liouville-von Neumann equation gives the equation of motion of the density matrix as
+The Liouville-von Neumann equation establishes the equation of motion of the density matrix as
 \bea
 \frac{d\rho}{dt}=-i\left[\frac{H}{\hbar},\rho\right].
 \eea
-In principle, given the Hamiltonian~\eq{TRANS_H}, we can solve the equations of motion. However, just as in the Einstein's theory of $A$ and $B$ coefficients, spontaneous emission should be taken into account even though our model is semiclassical. In other words, relaxation terms due to the coupling between the atom and the quantized electromagnetic field should be added into the system.
+In principle, given the Hamiltonian~\eq{TRANS_H}, we can solve the equations of motion. However, just as in Einstein's theory of $A$ and $B$ coefficients, spontaneous emission should be taken into account even though our model is semiclassical. In other words, relaxation terms due to the coupling between the atom and the quantized electromagnetic field should be added into the system.
 
 First, there is a constant probability per unit time $\Gamma$ for decay from the excited state 2 to the ground state 1, so that we have
 \bea
@@ -154,8 +154,9 @@ Equation~\eq{TWO_LEVEL_EQ}, together with the condition of unit trace $\rho_{11}
 \label{STEADY_STATE}
 \eea
 $\Gamma\rho_{22}$ stands for the probability per unit time that an atom in an excited state falls down to the ground state. According to the solution of $\rho_{22}$ in ~\eq{STEADY_STATE}, the fluorescence intensity behaves as a function of detuning as a Lorentzian with the maximum at $\Delta=0$ and with the half width at half maximum, HWHM, $\gamma^\prime=\sqrt{\gamma^2+\abs{\Omega}^2/2}$.  In the weak-field approximation, the power broadening from the Rabi frequency becomes negligible, thus the HWHM would be close to the natural width $\gamma$. Again, just as the Einstein $A$ coefficient, $\Gamma$  and $\gamma$ are introduced here as phenomenological constants.
+
 \subsection{Polarizability of a two-level atom}
-Besides the fluorescence, our strongest interest still lies in the light propagation in a polarizable medium. In the section about local-field corrections~\ref{LFC}, our discussion ended up with the relation between the susceptibility of the medium $\chi$ and the atomic polarizability $\alpha$. Now let us move on to the expression of $\chi$ for a two-level medium.
+Besides the fluorescence, our strongest interest still lies in the light propagation in a polarizable medium. In the section about local-field corrections~\ref{LFC}, our discussion concluded with the relation between the susceptibility of the medium $\chi$ and the atomic polarizability $\alpha$. Now let us move on to the expression of $\chi$ for a two-level medium.
 
 Starting from Maxwell's equations in a medium, we have for the electric field an inhomogeneous wave equation
 \bea
@@ -177,7 +178,7 @@ where $k=\omega/c$, and similarly for $\mathcal P$. Here we also assume that the
 \label{BASIC_EQ}
 \eea
 
-As an example, consider the case when the electric field amplitude is stationary and the response of the medium is linear:
+As an example, consider the case in which the electric field amplitude is stationary and the response of the medium is linear:
 \bea
 \frac{\partial \mathcal E}{\partial t}=0, \quad \mathcal P=\epsilon_0\chi\mathcal E.
 \eea
@@ -203,7 +204,7 @@ On the other hand, the observed dipole moment is given by the expectation value 
 \bea
 \bd=\langle\hat{\bd}\rangle={\rm Tr}\left(\hat{\bd}\rho\right)\hat{\bf e}=(\dip\rho_{01}+\dip^*\rho_{21})\hat{\bf e}.
 \eea
-Without restricting the generality, we hencefort take the dipole matrix element $\dip$ to be real.
+Without restricting the generality, we henceforth take the dipole matrix element $\dip$ to be real.
 
 Now we take the steady-state solution ~\eq{STEADY_STATE}, and restore the oscillations at the frequency $\omega$ that were eliminated in the rotating frame. We have
 \bea

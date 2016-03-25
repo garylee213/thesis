@@ -17,14 +17,14 @@ Except for the simplest examples, it is impractical to analytically solve the pr
 \section{From quantum field theory to classical simulations}
 \label{QFTTOCLASS}
 
-Classical simulations is the main method of investigating cooperative atom responses in a dense medium within our research. Under certain conditions, such as when saturation of the atoms is negligible, this approach is both theoretically valid and practically feasible.
+The use of classical simulations is the main method of investigating cooperative atom responses in a dense medium within our research. Under certain conditions, such as when saturation of the atoms is negligible, this approach is both theoretically valid and practically feasible.
 
 A field theory for light and matter under the Markov and Born approximations was introduced some time ago~\cite{PhysRevA.55.513}. Starting from the full quantum field theory, a hierarchy of equations of motion for atomic correlation functions was obtained.
 
 Specifically, let us momentarily ignore the motion of the atoms, including possible effects of photon recoil on the atoms. Second, we take the limit of low light intensity. Third, we restrict our attention to a 
- $J_g=0\rightarrow J_e=1$ atomic transition, the simplest possible realistic optical transition scheme in full three dimensions. Fourth, we assume that the incoming light is classical, i.e., a quantum field in a coherent state. We define the atomic correlation functions as
+ $J_g=0\rightarrow J_e=1$ atomic transition, the simplest possible realistic optical transition scheme in three dimensions. Fourth, we assume that the incoming light is classical, i.e., a quantum field in a coherent state. We define the atomic correlation functions as
 \bea
-\mathbf{P}(\mathbf{r}_1)\equiv\mathbf{P}_1(;\mathbf{r}_1)&=&\langle\psi^\dagger_g(\mathbf{r}_1)\mathbf{d}_{ge}\psi_e(\mathbf{r}_1)\rangle,\nonumber\\
+\mathbf{P}_1(;\mathbf{r}_1)&=&\langle\psi^\dagger_g(\mathbf{r}_1)\mathbf{d}_{ge}\psi_e(\mathbf{r}_1)\rangle\equiv\langle \mathbf{P}^+(\mathbf{r}_1)\rangle,\nonumber\\
 \mathbf{P}_2(\mathbf{r}_1;\mathbf{r}_2)&=&\langle\psi^\dagger_g(\mathbf{r}_1)\mathbf{P}^+(\mathbf{r}_2)\psi_g(\mathbf{r}_1)\rangle,\\
 \mathbf{P}_3(\mathbf{r}_1,\mathbf{r}_2;\mathbf{r}_3)&=&\langle\psi^\dagger_g(\mathbf{r}_1)\psi^\dagger_g(\mathbf{r}_2)\mathbf{P}^+(\mathbf{r}_3)\psi_g(\mathbf{r}_2)\psi_g(\mathbf{r}_1)\rangle, \nonumber\\
 &&\cdots,\nonumber
@@ -43,7 +43,7 @@ From the angle of classical physics, the correlations between the atoms are indu
 \dot{\mathbf{P}}(\mathbf{r}_1)=(i\Delta-\gamma)\mathbf{P}(\mathbf{r}_1)+i\zeta\rho(\mathbf{r}_1)\mathcal{E}_0(\mathbf{r}_1)+i\zeta\int d^3r_2\sf G(\mathbf{r}_1-\mathbf{r}_2)\mathbf{P}_2(\mathbf{r}_1;\mathbf{r}_2).
 \label{CORE}
 \eea
-As before, $\Delta$ is the detuning from the atomic resonance, $\gamma$ is the HWHM linewidth of the transition, $\zeta=\mathcal{D}^2/\hbar$, and $\mathcal{E}_0$ would be the electric field of the driving light if the matter were absent. $\sf G$ is the dipole field propagator, a $3\times 3$ matrix such that $\sf G(\mathbf{r}-\mathbf{r}^\prime)\mathbf{d}$ is the usual electric field at $\mathbf{r}$ from a dipole $\mathbf{d}$ at $\mathbf{r}^\prime$.
+As before, $\Delta$ is the detuning from the atomic resonance, $\gamma$ is the HWHM linewidth of the transition, $\zeta=\mathcal{D}^2/\hbar$, and $\mathcal{E}_0$ is what the electric field of the driving light would be if the matter were absent. $\sf G$ is the dipole field propagator, a $3\times 3$ matrix such that $\sf G(\mathbf{r}-\mathbf{r}^\prime)\mathbf{d}$ is the usual electric field at $\mathbf{r}$ from a dipole $\mathbf{d}$ at $\mathbf{r}^\prime$.
 
 Eq.~\eq{CORE} is the first in a hierarchy of equations. The two-atom correlation function $\mathbf{P}_2(\mathbf{r}_1;\mathbf{r}_2)$ has an analogous equation of motion that is coupled to a three-atom correlation function, which is coupled to a four-atom correlation function, and so on.
 
@@ -59,7 +59,7 @@ Keeping in mind the restrictions raised in Chapter~\ref{QFTTOCLASS}, in particul
 \beq
 {\bf E}({\bf r},t) = \half {\bf E}({\bf r}) e^{-i\omega t} + {\rm c.\,c.}
 \eeq
-The amplitude vectors may be complex, which allows for, circularly or elliptically polarized quantities as usual. 
+The amplitude vectors may be complex, which allows for circularly or elliptically polarized quantities as usual. 
 
 With the given assumptions, according to the polarizability given by Eq.~\eq{POLARIZABILITY}, the dipole moment of an atom at point $\bf r$ is
 \beq
@@ -116,7 +116,7 @@ where $\cal E$ and $\cal B$ are $3\times3$ matrices with the elements
 (\hat{\bf n}\times \hat{\bf e}_j)\times\hat{\bf n} + [3\hat{\bf n}(\hat{\bf n}\cdot\hat{\bf e}_j)-\hat{\bf e}_j]\left( \frac{1}{R^2}-\frac{i}{R}\right)\right\}\frac{e^{iR}}{R}\,,\\
 {\cal B}_{ij}({\bf r},{\bf r}) &=&\hat{\bf e}_i \cdot\hat{\bf n}\times\hat{\bf e}_j\left(1-\frac{1}{iR}\right)\,\frac{e^{iR}}{R}\,.
 \eea
-Here $R$ and $\hat{\bf n}$ are the distance from the source point to the field point and the unit vector pointing from the source point to the field point as before, Eq.~\eq{DDIR}, and $\hat{\bf e}_i$ are the cartesian unit vectors. One the other hand, given the electric field on an atom at ${\bf r}$, in the new convention of units the induced dipole moment reads
+Here $R$ and $\hat{\bf n}$ are the distance from the source point to the field point and the unit vector pointing from the source point to the field point as before, Eq.~\eq{DDIR}, and $\hat{\bf e}_i$ are the cartesian unit vectors. On the other hand, given the electric field on an atom at ${\bf r}$ and in the new convention of units, the induced dipole moment reads
 \beq
 {\bf d} = \alpha\,{\bf E}({\bf r}),\quad \alpha = -\frac{3}{2(\delta+i)}\,.
 \label{STEADY}
@@ -149,7 +149,7 @@ One more issue needs to be addressed: What to do with gases in which the positio
 \beq
 \rho_k(\br_1,\ldots,\br_k) = \rho(\br_1)\ldots\rho(\br_k),
 \eeq
-and is, in fact, a microscopic model for a Bose-Einstein condensate. Various reasons exist why the positions of the atoms could have short-range correlations, such as atom-atom interactions and boson bunching. However the associated length scales, such as scattering length and thermal de Broglie wavelength are ordinarily much smaller than the interatomic spacings that we consider, so we deem our uncorrelated model as an excellent approximation.
+and is, in fact, a microscopic model for a Bose-Einstein condensate. Various reasons exist why the positions of the atoms could have short-range correlations, such as atom-atom interactions and boson bunching. However the associated length scales, such as scattering length and thermal de Broglie wavelength are ordinarily much smaller than the interatomic spacings that we consider, so we deem our uncorrelated model to be an excellent approximation.
 
 \section{Example: Radiation from a single atom}
 We begin with a single atom at the origin of the coordinates, ${\bf r}_1 = 0$. It is driven by an incoming plane wave that propagates in the $x$ direction and is polarized in the $z$ direction, so that we have
@@ -172,7 +172,7 @@ P_1 &=& \int d\theta \sin\theta\,d\varphi\, F(\theta,\varphi) = \frac{3|E_0|^2}{
 \eea
 These are utterly familiar results, even if they might look unusual at first sight  because of our units.
 
-Even though this is the case of a single atom and therefore presents no enhanced radiation due to interference or cooperative effects, it is still instructive to see how the energetics works out, see also Ref.~\cite{CRA82}. Thus, the total electric and magnetic fields at the point $\br$ are written
+Even though this is the case of a single atom and therefore presents no enhanced radiation due to interference or cooperative effects, it is still instructive to see how the energetics works out; see also Ref.~\cite{CRA82}. Thus, the total electric and magnetic fields at the point $\br$ are written
 \beq
 \bE_T(\br) = \bE_D(\br) + \bE_0(\br),\, {\bf B}_T(\br) = {\bf B}_D(\br) + {\bf B}_0(\br),
 \eeq
@@ -182,7 +182,7 @@ where the index $D$ denotes for the dipole radiation from the atom and index $0$
 \eeq
 The first term is due to the incoming field. When the corresponding energy flux is integrated over a surface not containing any part of the source of the incoming field, the result is obviously zero. The second term is due to the radiation of the dipole alone, as if the incoming field were not present, and provides Eqs.~\eq{1DIPF}, \eq{1DIPP} for the flux and the total radiated power. The final two terms in square brackets produce the portion of the Poynting vector that corresponds to the interference between the incoming and the dipolar fields.
 
-At large distances the interference terms are the dominant contribution to the Poynting vector. As they are quite complicated already for such a simple case, we do not write them down, but at a fixed large distance the may vary rapidly with the angles and have a negative radial component, as if power were streaming toward the radiating dipole. One cannot guarantee that the Poynting vector is the local energy current density, as the continuity equation for energy only says that the integral of the normal component of the Poynting vector over a closed surface equals the rate of change of the energy inside that surface. Nevertheless, one can  show analytically that the total power associated with the interference term equals $-P_1$. The total power coming  out of a closed (spherical, in our explicit calculations) surface surrounding the dipole therefore equals $P_1-P_1=0$. This is as it should be, as evidently the dipole does not store or emit net energy but simply reradiates it.
+At large distances the interference terms are the dominant contribution to the Poynting vector. As they are quite complicated already for such a simple case, we do not write them down, but at a fixed large distance they may vary rapidly with the angles and have a negative radial component, as if power were streaming toward the radiating dipole. One cannot guarantee that the Poynting vector is the local energy current density, as the continuity equation for energy only says that the integral of the normal component of the Poynting vector over a closed surface equals the rate of change of the energy inside that surface. Nevertheless, one can  show analytically that the total power associated with the interference term equals $-P_1$. The total power coming  out of a closed (spherical, in our explicit calculations) surface surrounding the dipole therefore equals $P_1-P_1=0$. This is as it should be, as evidently the dipole does not store or emit net energy but simply reradiates it.
 
 \section{Example: Radiation from two atoms}
 For two atoms an explicit solution for the radiation field exists no matter what are the incoming fields and the positions of the dipoles, but the general expression is complicated enough to be useless. We discuss here as an example the special case in which a plane wave polarized in the $z$ direction and propagating in the $x$ direction strikes two atoms sitting on the $z$ axis. Specifically, we have the incoming field and the two positions for the dipoles
@@ -340,7 +340,7 @@ S_R(\br) &=& \frac{1}{8\pi} \bE_D(\br)\cdot\bE_D^*(\br )\nonumber\\
 &=& \frac{1}{8\pi} \sum_{i,j} \bE_i(\br)\cdot\bE_j ^*(\br)\,.
 \eea
 
-In fact, it may be that the atoms reside in some fixed configuration, but for a gaseous sample it is more physical to take their position to be randomly distributed in space. We take the position of each atom to be a random variable independent of the positions of the other atoms, governed by same probability density function $f(\br)$. Then the average outward energy flux (over many samples of the gas) is determined from
+In fact, it may be that the atoms reside in some fixed configuration, but for a gaseous sample it is more physical to take their position to be randomly distributed in space. We take the position of each atom to be a random variable independent of the positions of the other atoms, governed by same probability density function $f(\br)$. Then for a given $\br$, $\left\{\bE_1(\br),\cdots,\bE_i(\br),\cdots \bE_N(\br)\right\}$ is a set of independent and identically distributed random variables. Therefore, the average outward energy flux (over many samples of the gas) is determined from
 \bea
 8 \pi\bar{S}_R &=&\left\langle
  \sum_{i\ne j} \bE_i(\br)\cdot\bE_j^*(\br)+\sum_i \bE_i(\br)\cdot\bE_i^*(\br)
@@ -383,8 +383,7 @@ N(N-1)\frac{9\left[(4R^4-6R^2+9)-e^{-\frac{4R^2}{3}}(4R^4+6R^2+9)\right]}{32R^6}
 \label{ANGULAR}
 \end{figure}
 
-
-The main utility of these formulae is that they will serve as references to which to compare numerical results. A few incidental results could be noted, however.  The part $\propto N(N-1)$ in Eq.~\eq{PN} is the same as it would be for the continuous atom density in Eq.~\eq{CONT_DEN}, except for the factor of $N(N-1)$ instead of $N^2$. The intensity of the radiation in the forward direction, at $\theta=0$, coherent and incoherent components, add up to exactly $N^2$ times the intensity from a single atom. The bigger the sample, the narrower the cone in the direction $\theta=0$ for coherent scattering.  This aspect is demonstrated in Fig.~\ref{ANGULAR}. The sample acts as an antenna that directs the radiation in the forward direction. Nevertheless, the total power decreases with increasing size of the cloud.
+The main utility of these formulae is that they will serve as references with which to compare numerical results. A few incidental results could be noted, however.  The part $\propto N(N-1)$ in Eq.~\eq{PN} is the same as it would be for the continuous atom density in Eq.~\eq{CONT_DEN}, except for the factor of $N(N-1)$ instead of $N^2$. The intensity of the radiation in the forward direction, at $\theta=0$, coherent and incoherent components, add up to exactly $N^2$ times the intensity from a single atom. The bigger the sample, the narrower the cone in the direction $\theta=0$ for coherent scattering.  This aspect is demonstrated in Fig.~\ref{ANGULAR}. The sample acts as an antenna that directs the radiation in the forward direction. Nevertheless, the total power decreases with increasing size of the cloud.
 
 Conversely, in the limit $R\rightarrow0$ the intensity in all directions is enhanced by a factor $N^2$, and of course so is the total power. Given the Dicke cooperative regime as discussed in Sec.~\ref{DICKESTORY}, a reader might erroneously interpret such an enhancement as a cooperative phenomenon. This cannot be, because in this example we have simply added the fields from independent radiators.
 
@@ -439,7 +438,7 @@ Of course a truly exact numerical solution for an infinite slab is impossible, a
 
 A serious complication follows from the use of the finite-size disk, namely, diffraction. Extinction of light upon propagation through a sample means that the incoming and the reradiated light interfere destructively. A finite-size disk does not radiate a plane wave, so we lose what is known as mode matching between the radiation from the dipoles and the incoming plane wave. In fact, an exact computation of the transmitted light does not reproduce satisfactorily even the most rudimentary results of the optics of an infinite slab.
 
-To circumvent this problem we resort to the method introduced in Ref.~\cite{1367-2630-14-5-055001}. Basically, we obtain the dipole moments of the atoms in the sample, but when calculating the field transmitted through the sample, we assume that each dipole radiates a plane wave that is automatically mode matched with the incoming wave. As before, let us have that the incoming plane wave propagate in the $z$ direction. For a disk of radius $R$, the amplitude of the assumed plane wave from a dipole at ${\bf r}_j$ is computed as
+To circumvent this problem we resort to the method introduced in Ref.~\cite{1367-2630-14-5-055001}. Basically, we obtain the dipole moments of the atoms in the sample, but when calculating the field transmitted through the sample, we assume that each dipole radiates a plane wave that is automatically mode matched with the incoming wave. As before, let us assume that the incoming plane wave propagates in the $z$ direction. For a disk of radius $R$, the amplitude of the assumed plane wave from a dipole at ${\bf r}_j$ is computed as
 \beq
 \bE_j({\bf r}) = \frac{ik}{2\pi\epsilon_0 R^2} [\bd({\bf r}_j)-\hat{\bf e}_z \cdot\bd({\bf r}_j)\,\hat{\bf e}_z] e^{ik(z-z_j)}\,.
 \label{TRLIGHT}
@@ -475,7 +474,7 @@ We plot the shift of the resonance $s$ for inhomogeneously broadened samples as 
 
 The shift tends to zero at small thicknesses. In this limit the physics clearly becomes two dimensional, for a fixed three-dimensional density the relevant two-dimensional area density tends to zero, and eventually the atoms must radiate completely independently. 
 
-We also plot the CLS, Eq.~\eq{LL_CLS}, as a solid line. Numerical data and theory show similar oscillations, albeit differing approximately by an additive constant. In Fig.~\eq{STATIC_CLS} we also plot as a dashed line the vertically translated version of the theory to fit the numerical data points with $hk\geq 1$. An additive term was also fitted to the experiments~\cite{PhysRevLett.108.173601} before they gave an agreement with Eq.~\eq{LL_CLS}. The agreement of our numerical experiments with the CLS theory is on a similar footing as in the real experiments.
+We also plot the CLS, Eq.~\eq{LL_CLS}, as a solid line. Numerical data and theory show similar oscillations, albeit differing approximately by an additive constant. In Fig.~\eq{STATIC_CLS} we also plot as a dashed line the vertically translated version of the theory to fit the numerical data points with $hk\geq 1$. An additive term was also fitted to the experiments~\cite{PhysRevLett.108.173601} before they gave agreement with Eq.~\eq{LL_CLS}. The agreement of our numerical experiments with the CLS theory is on a similar footing as in the real experiments.
 
 
 \begin{figure}[h!]
@@ -488,17 +487,17 @@ We also plot the CLS, Eq.~\eq{LL_CLS}, as a solid line. Numerical data and theor
 
 Our interpretation is that for homogeneously broadened samples the standard electrodynamics, a mean field theory, simply fails. This is because at the density $\rho=2k^2$ the atoms are so close to one other that their dipole-dipole interactions make them a strongly interacting, or strongly correlated, system. On the other hand, inhomogeneous broadening appears to promote mean field physics.
 
-For more insights, consider two atoms 1 and 2 with possibly different resonance frequencies, hence, different polarizabilities $\alpha_1$ and $\alpha_2$. We sketch a formal solution to Eq.~\eq{FEQ}. The field on atom 2 that is generated by the incident field and the light scattered from atom 1 is
+For more insights, consider two atoms 1 and 2 with possibly different resonance frequencies, and hence, different polarizabilities $\alpha_1$ and $\alpha_2$. We sketch a formal solution to Eq.~\eq{FEQ}. The field on atom 2 that is generated by the incident field and the light scattered from atom 1 is
 \bea
 \bE(\br_2)&=&(1-\alpha_1\alpha_2\G\G)^{-1}[\cbE_0(\br_2)+\alpha_1\G\cbE(\br_1)]\nonumber\\
 &=&\cbE_0(\br_2)+\alpha_1\G\cbE_0(\br_1)+\alpha_1\alpha_2\G\G\cbE_0(\br_2)+\dots.
 \eea
 
-The second line shows the first three terms of the expansion of $(1-\alpha_1\alpha_2\G\G)^{-1}$, with $\G\equiv\G(\br_1-\br_2)=\G(\br_2-\br_1)$. The first term is the free field on atom 2; in the second term the free field excites atom 1, which sends its dipolar field back on atom 2; in the third term the free field excites atom 2, which sends a dipolar field to excite atom 1, which sends a dipolar field back on atom 2. Further terms in the expansion come out in the same way reflecting repeated photon exchanges between the atoms. Such recurrent scattering processes in which a classical wave scatters more than once by the same atom are responsible for the cooperative phenomena and the emergence of subradiant and superradiant resonances~\cite{PhysRevA.55.513,PhysRevA.86.031602,PhysRevB.86.085116}.
+The second line shows the first three terms of the expansion of $(1-\alpha_1\alpha_2\G\G)^{-1}$, with $\G\equiv\G(\br_1-\br_2)=\G(\br_2-\br_1)$. The first term is the free field on atom 2; in the second term the free field excites atom 1, which sends its dipolar field back on atom 2; in the third term the free field excites atom 2, which sends a dipolar field to excite atom 1, which sends a dipolar field back on atom 2. Further terms in the expansion come out in the same way reflecting repeated photon exchanges between the atoms. Such recurrent scattering processes in which a classical wave scatters more than once from the same atom is responsible for the cooperative phenomena and the emergence of subradiant and superradiant resonances~\cite{PhysRevA.55.513,PhysRevA.86.031602,PhysRevB.86.085116}.
 
 Let us now regard atom 2 as the spectator and imagine averaging over the position of atom 1. Upon averaging, the second term becomes the mean-field contribution radiated by an assumedly continuous polarization, and further terms represent repeated photon exchanges between the atoms. 
 
-Next, add the inhomogeneous broadening $\omega_D$. To the order of magnitude, averaging over the resonant frequencies suppresses the polarizability by a factor or $\gamma/\omega_D$. Thus, the first nontrivial term in the expansion corresponding to the mean-field polarization becomes suppressed by this factor, and the higher terms by higher powers of the small quantity $\gamma/\omega_D$. Qualitatively, repeated photon exchanges are deemphasized because in such processes both the emitter and the absorber are off resonance. This leaves the mean field as the dominant contribution.
+Next, add the inhomogeneous broadening $\omega_D$. To the order of magnitude, averaging over the resonant frequencies suppresses the polarizability by a factor of $\gamma/\omega_D$. Thus, the first nontrivial term in the expansion corresponding to the mean-field polarization becomes suppressed by this factor, and the higher terms by higher powers of the small quantity $\gamma/\omega_D$. Qualitatively, repeated photon exchanges are deemphasized because in such processes both the emitter and the absorber are off resonance. This leaves the mean field as the dominant contribution.
 
 Analogously, the transition from homogeneously broadened to inhomogeneously broadened phenomenology also takes place in a many-atom sample when the inhomogeneous broadening $\omega_D$ and the effective linewidth $\Gamma$ are comparable. This is, in fact, what we observe in the numerical experiments.
 

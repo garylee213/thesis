@@ -1,4 +1,4 @@
-\chapter{Semiclassical Theory of Interaction between Two-level Atom and Classical Light}
+\chapter{Semiclassical Theory of Interaction between Two-level Atoms and Classical Light}
 
 \section{Electrodynamics of a polarizable medium: Local-field correction and Clausius-Mossotti relation}
 \label{LFC}
@@ -51,7 +51,7 @@ Now let us get back to the problem of the response of a quantum two-level atom t
 \subsection{Einstein $A$ and $B$ coefficients}
 Einstein used $A$ and $B$ coefficients to formulate a purely phenomenological theory of  absorption and emission of light by an atom~\cite{quantum_optics,1982AmJPh..50..982H}.
 
-We assume $N$ identical two-level atoms, energy of the lower and higher levels  $E_1$ and $E_2$. The photon emitted or absorbed by the atom has an energy equal to the difference between two levels, i.e., $\hbar\omega_0=E_2-E_1$.
+We assume $N$ identical two-level atoms, with energy of the lower and higher levels  $E_1$ and $E_2$. The photon emitted or absorbed by the atom has an energy equal to the difference between two levels, i.e., $\hbar\omega_0=E_2-E_1$.
 
 Three processes exist simultaneously in the atom-field interaction: spontaneous emission, stimulated emission, and absorption. Accordingly, three phenomenological constants exists: $A_{21}$, $B_{21}$ and $B_{12}$. We assume the average energy density (per unit volume and unit frequency) of the electromagnetic field at the resonance frequency $U$, denote the populations of the lower and upper levels by $N_1$ and $N_2$, thus $N_1+N_2=N$, and write a rate equation for the populations
 \bea
@@ -73,10 +73,10 @@ On the other hand, if we switch off the external field, i.e., $U=0$, Eq.~\eq{AB_
 \bea
 \frac{dN_2}{dt}=-N_2A,
 \eea
-giving $N_2(t)=N^0_2\exp(-At)$. This exponential decay of the upper-level population with time corresponds to the familiar spontaneous emission. Of course, the ab initio calculation of the $A$ coefficient (and $B$ as well) is not feasible under the present framework. An analysis based on quantized electromagnetic field is needed, which will not be covered here.
+giving $N_2(t)=N^0_2\exp(-At)$. This exponential decay of the upper-level population with time corresponds to the familiar spontaneous emission. Of course, the {\it ab initio} calculation of the $A$ coefficient (and $B$ as well) is not feasible under the present framework. An analysis based on a quantized electromagnetic field is needed, which will not be covered here.
 
 \subsection{Damped two-level system}
-Let us assume that the two-level atom, energy eigenstates $\ket{1}$ and $\ket{2}$, is driven by a classical monochromatic light field
+Let us assume that the two-level atom, with energy eigenstates $\ket{1}$ and $\ket{2}$, is driven by a classical monochromatic light field
 \bea
 \bE(\br,t)=\frac{1}{2}\cbE(\br)e^{-i\omega t}+\frac{1}{2}\cbE^*(\br)e^{i\omega t}.
 \eea
@@ -98,7 +98,8 @@ Next we transform to a ``rotating frame'' with a unitary operator
 \bea
 U=\ket{1}\bra{1}+e^{i\omega t}\ket{2}\bra{2}.
 \eea
-In order to keep the time dependent Schrodinger equation valid, the transformed Hamiltonian should be defined as
+
+In order to keep the time dependent Schr\"odinger equation valid, the transformed Hamiltonian should be defined as
 \bea
 \tilde{H}&=&i\hbar\frac{dU}{dt}U^{\dagger}+UHU^{\dagger}\nonumber\\
 &=&(\omega_0-\omega)\ket{2}\bra{2}\nonumber\\
@@ -153,7 +154,7 @@ Equation~\eq{TWO_LEVEL_EQ}, together with the condition of unit trace $\rho_{11}
 \rho_{22}=1-\rho_{11}=\frac{\abs{\Omega}^2/4}{\Delta^2+\gamma^2+\abs{\Omega}^2/2},\quad\rho_{21}=(\rho_{12})^*=\frac{\frac{1}{2}\Omega(i\gamma-\Delta)}{\Delta^2+\gamma^2+\abs{\Omega}^2/2}.
 \label{STEADY_STATE}
 \eea
-$\Gamma\rho_{22}$ stands for the probability per unit time that an atom in an excited state falls down to the ground state. According to the solution of $\rho_{22}$ in ~\eq{STEADY_STATE}, the fluorescence intensity behaves as a function of detuning as a Lorentzian with the maximum at $\Delta=0$ and with the half width at half maximum, HWHM, $\gamma^\prime=\sqrt{\gamma^2+\abs{\Omega}^2/2}$.  In the weak-field approximation, the power broadening from the Rabi frequency becomes negligible, thus the HWHM would be close to the natural width $\gamma$. Again, just as the Einstein $A$ coefficient, $\Gamma$  and $\gamma$ are introduced here as phenomenological constants.
+$\Gamma\rho_{22}$ stands for the probability per unit time that an atom in an excited state falls down to the ground state. According to the solution of $\rho_{22}$ in ~\eq{STEADY_STATE}, the fluorescence intensity behaves as a function of detuning as a Lorentzian with the maximum at $\Delta=0$ and with the half width at half maximum, HWHM, $\gamma^\prime=\sqrt{\gamma^2+\abs{\Omega}^2/2}$.  In the weak-field approximation, the power broadening from the Rabi frequency becomes negligible; thus the HWHM would be close to the natural width $\gamma$. Again, just as for the Einstein $A$ coefficient, $\Gamma$  and $\gamma$ are introduced here as phenomenological constants.
 
 \subsection{Polarizability of a two-level atom}
 Besides the fluorescence, our strongest interest still lies in the light propagation in a polarizable medium. In the section about local-field corrections~\ref{LFC}, our discussion concluded with the relation between the susceptibility of the medium $\chi$ and the atomic polarizability $\alpha$. Now let us move on to the expression of $\chi$ for a two-level medium.
@@ -172,7 +173,7 @@ The amplitudes $\mathcal E$ and $\mathcal P$ are assumed to vary slowly in time 
 \bea
 \abs{\frac{\partial\mathcal E}{\partial t}}\ll \omega\abs{\mathcal E}, \quad \abs{\frac{\partial\mathcal E}{\partial z}}\ll k\abs{\mathcal E}, 
 \eea
-where $k=\omega/c$, and similarly for $\mathcal P$. Here we also assume that the light and the material response share the polarization vector $\hat{\bf e}$. Neglecting all but the the lowest-order derivatives needed for a nontrivial result, Eq.~\eq{WAVE_EQ} is reduced to 
+where $k=\omega/c$, and similarly for $\mathcal P$. Here we also assume that the light and the material response share the polarization vector $\hat{\bf e}$. Neglecting all but the lowest-order derivatives needed for a nontrivial result, Eq.~\eq{WAVE_EQ} is reduced to 
 \bea
 \frac{\partial \mathcal E}{\partial z}+\frac{1}{c}\frac{\partial \mathcal E}{\partial t}=i\frac{k}{2\epsilon_0}\mathcal P.
 \label{BASIC_EQ}

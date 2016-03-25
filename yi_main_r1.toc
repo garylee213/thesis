@@ -1,7 +1,7 @@
 \contentsline {chapter}{\numberline {1.}Introduction}{1}
 \contentsline {section}{\numberline {1.1}Light scattering and cooperative effects}{1}
 \contentsline {section}{\numberline {1.2}Outline}{6}
-\contentsline {chapter}{\numberline {2.}Semiclassical Theory of Interaction between Two-level Atom and Classical Light}{9}
+\contentsline {chapter}{\numberline {2.}Semiclassical Theory of Interaction between Two-level Atoms and Classical Light}{9}
 \contentsline {section}{\numberline {2.1}Electrodynamics of a polarizable medium: Local-field correction and Clausius-Mossotti relation}{9}
 \contentsline {section}{\numberline {2.2}Interaction of a two-level atom with a classical field}{11}
 \contentsline {subsection}{\numberline {2.2.1}Einstein $A$ and $B$ coefficients}{12}
